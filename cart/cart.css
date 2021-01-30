@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+}
+nav {
+  background-color: grey;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.item {
+  margin: 10px auto auto auto;
+  width: 1200px;
+  height: 300px;
+  border-bottom: 1px solid grey;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr;
+  grid-template-rows: 1fr 3fr 4fr 1fr;
+}
+.item>div:not(.item-description) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-picture {
+  margin-top: 20px;
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+  background-image: url('assets/potato.jpeg');
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+.item-name {
+  background-color: lightcoral;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.item-description {
+  background-color: lightyellow;
+  grid-column: 2 / 4;
+  grid-row: 3 / 5;
+}
+.change-volume {
+  background-color: lightgreen;
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+.item-price {
+  background-color: lightblue;
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
+.remove-button {
+  margin-left: 150px;
+  background-color: aqua;
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+}
+
+
+.item button {
+  border: none;
+  border-radius: 18px;
+  height: 35px;
+  width: 35px;
+  font-size: large;
+}
+.change-volume>button {
+  background-color: #0071e3;
+}
+.quantity {
+  font-size: larger;
+  margin: 0 10px 0 10px;
+}
+
+
+
+.checkout {
+  margin: auto;
+  width: 800px;
+  border-bottom: 1px solid grey;
+  display: grid;
+  height: 20vh;
+  grid-template-rows: 1fr 1fr 1.5fr ;
+}
+.checkout>div {
+  margin: 0 20% 0 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subtotal {
+  grid-row: 1 / 2;
+}
+.tax {
+  grid-row: 2 / 3;
+}
+.total {
+  font-size: 150%;
+  grid-row: 3 / 4;
+}
+
+.purchase {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 9fr 250px 1fr;
+}
+.purchase-button {
+  border: none;
+  border-radius: 18px;
+  height: 60px;
+  width: 125px;
+  grid-column: 2 / 3;
+  background: #0071e3;
+  font-size: large;
+}
+
+
