@@ -8,7 +8,7 @@
     "esModuleInterop": true,
     "sourceMap": true,
     "allowJs": true,
-    "lib": ["ESNext", "DOM"],
+    "lib": ["ESNext", "DOM", "es5", "es6", "dom.iterable"],
     "target": "ESNext",
     "moduleResolution": "node",
     "skipLibCheck": true,
