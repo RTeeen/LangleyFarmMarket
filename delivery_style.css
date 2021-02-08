@@ -1,0 +1,16 @@
+img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 200px, auto;
+    max-width: 800px;
+}
+
+.productPic {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
