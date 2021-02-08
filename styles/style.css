@@ -1,0 +1,47 @@
+* { 
+    margin: 0; 
+}
+
+body{
+    background-image: url("../assets/website-bg.jpg");
+    background-repeat: repeat;
+    background-size: 15%;
+    
+}
+header{
+    width: auto;
+    height: 450px;
+    background-image: url("https://wallpaperaccess.com/full/2792347.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+nav{
+    position: sticky;
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-template-rows: 50px;
+    background-color: black;
+    grid-auto-flow: column;
+    border-bottom: 5px solid green;
+    
+}
+ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column: 2/3;
+    list-style: none;
+    
+}
+li{
+    margin: auto;
+}
+a{
+    font-family: 'Lexend Mega', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+#logo{
+    max-width: 100%; 
+    height: 100%;
+}
