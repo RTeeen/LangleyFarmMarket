@@ -6,8 +6,21 @@ body{
     background-image: url("../assets/website-bg.jpg");
     background-repeat: repeat;
     background-size: 15%;
+    animation-name: bg;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
     
 }
+@keyframes bg{
+    0% {
+      background-position: 0px, 0px;
+    }
+    100% {
+      background-position: 500px, 0px;
+    }
+  }
+  
 header{
     width: auto;
     height: 450px;
@@ -16,6 +29,7 @@ header{
     background-size: cover;
     background-position: 50%;
 }
+
 nav{
     position: sticky;
     display: grid;
