@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Langley Farm Market</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/d3js/6.5.0/d3.min.js"></script>
+   
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <div id="wrapper">
     
     <header>
-        <div id="name"><h1>Langley Farm Market</h1></div>
+     <h1>Langley Farm Market</h1>
         
     </header>
     <nav class="sticky-bar">
@@ -70,13 +70,21 @@
             </footer>
         
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
 <script>
     $(document).ready(function(){
+    
+            $( "h1" ).animate({
+    opacity: 1,
+    left: "20%",
+  }, 50, function() {
+    // Animation complete.
+  });
+  $("h1").css("font-size", "3.25rem");
+        })
+          
   
-  
-    });
 </script>
 <script src="./slide_show.js"></script>
 </body>
